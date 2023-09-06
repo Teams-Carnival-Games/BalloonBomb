@@ -13,6 +13,5 @@ build
 .fx/states/state.local.json
 .backup
 env/.env.dev.*
-env/.env.dev
 .backup/*
 /devTools/
