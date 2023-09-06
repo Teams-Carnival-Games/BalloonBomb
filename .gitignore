@@ -5,6 +5,7 @@ node_modules
 .env.teamsfx.local
 .env.teamsfx.dev
 appPackage/build
+.vscode
 
 subscriptionInfo.json
 build
@@ -12,5 +13,6 @@ build
 .fx/states/state.local.json
 .backup
 env/.env.dev.*
+env/.env.dev
 .backup/*
 /devTools/
