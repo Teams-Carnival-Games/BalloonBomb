@@ -1,24 +1,6 @@
-/*!
- * Copyright (c) Microsoft Corporation. All rights reserved.
- * Licensed under the MIT License.
- */
-
-// eslint-disable-next-line
 import { LiveEvent } from "@microsoft/live-share";
 import { useState, useEffect, useCallback, useRef } from "react";
 
-/**
- * Hook for sending notifications to display across clients
- *
- * @remarks
- *
- * @param {LiveEvent} notificationEvent presence object from Fluid container.
- * @param {microsoftTeams.app.Context} context Teams context object
- * @returns `{notificationStarted, notificationToDisplay, sendNotification}` where:
- * - `notificationStarted` is a boolean indicating whether `notificationEvent.initialize()` has been called.
- * - `notificationToDisplay` is the most recent notification to display.
- * - `sendNotification` is a callback method for sending a notification to other users in session.
- */
 export const useNotifications = (notificationEvent, context) => {
     const initializeStartedRef = useRef(false);
     const [notificationToDisplay, setNotificationToDisplay] = useState();

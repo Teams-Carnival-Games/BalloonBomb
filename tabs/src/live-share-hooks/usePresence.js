@@ -1,26 +1,3 @@
-/*!
- * Copyright (c) Microsoft Corporation. All rights reserved.
- * Licensed under the MIT License.
- */
-
-import {
-  PresenceState,
-} from "@microsoft/live-share";
-import { useState, useEffect, useRef, useMemo } from "react";
-
-/**
-* Hook for tracking users, roles, and who is in control
-*
-* @remarks
-*
-* @param {LivePresence} presence presence object from Fluid container.
-* @param {UserMeetingRole[]} allowedRoles List of acceptable roles for playback transport commands.
-* @returns `{started, localUser, users, presentingUser, localUserIsEligiblePresenter, localUserIsPresenting, takeControl}` where:
-* - `presenceStarted` is a boolean indicating whether `presence.initialize()` has been called.
-* - `localUser` is the local user's presence object.
-* - `users` is an array of user presence objects in the session.
-* - `localUserHasRoles` is a boolean indicating whether the local user is an eligible presenter.
-*/
 export const usePresence = (
   presence,
   allowedRoles
